@@ -1,3 +1,3 @@
-# Ulf Magnetics: Form of Blog
+# Ulf Magnetics, the blog
 ### band? concept? consultancy? mystery!
 
