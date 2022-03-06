@@ -92,7 +92,7 @@ The same could be done with sound files, either by depicting them as waveforms,
 or -- more interesting to me -- as spectrograms:
 
 ![Andy Shauf - Living Room - Spectral
-Analysis](/assets/images/2022-03-06-waveform.jpg "A spectogram of 'Living Room'
+Analysis](/images/2022-03-06-waveform.jpg "A spectogram of 'Living Room'
 by Andy Shauf (a very good song)")
 
 The network could potentially be trained to classify songs by genre based on
