@@ -53,7 +53,7 @@ of image recognition and is ready to be customized for different, more specific
 problem domains.
 
 Given this big head start, it only took about 450 example images of bears
-(sourced vi the Bing Image Search API) to train a model that could recognize
+(sourced vi the Bing Image Search API) to train a model that could recognizejjjjj
 grizzly vs black vs teddy bears with almost 100% accuracy. Naively, I would
 have thought that thousands of bear images at a minimum would have been
 required to get these kind of results, but training on ImageNet appears to have
@@ -92,7 +92,7 @@ The same could be done with sound files, either by depicting them as waveforms,
 or -- more interesting to me -- as spectrograms:
 
 ![Andy Shauf - Living Room - Spectral
-Analysis](/images/2022-03-06-waveform.jpg "A spectogram of 'Living Room'
+Analysis](/images/2022-03-06-waveform.jpg "A spectrogram of 'Living Room'
 by Andy Shauf (a very good song)")
 
 The network could potentially be trained to classify songs by genre based on
