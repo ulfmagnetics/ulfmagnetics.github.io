@@ -6,20 +6,20 @@
 }
 
 :root {
-    --primary-color: #39ff14;
+    font-size: 19px;
+    --primary-color: #cc0000;
     --secondary-color: #888888;
-    --background: #000000;
-    --surface: #1a1a1a;
+    --background: #1a1a1a;
+    --surface: #2e2e2e;
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
-    --border: #333333;
+    --border: #4a4a4a;
     --spacing: 1rem;
     --radius: 0.5rem;
 }
 
 body {
-    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background: var(--background);
@@ -46,6 +46,43 @@ header h1 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-brand {
+    display: inline-block;
+}
+
+.header-magnet img {
+    display: block;
+    height: 5rem;
+}
+
+.header-magnet:hover {
+    opacity: 0.8;
+}
+
+.header-brand img {
+    display: block;
+    height: 2.5rem;
+}
+
+header .location {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cc0000;
+    margin-top: 0;
+    line-height: 1;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: space-between;
 }
 
 header .tagline {
@@ -79,6 +116,8 @@ header .tagline {
 }
 
 .link-card h2 {
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    letter-spacing: 0.08em;
     font-size: 1.25rem;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
@@ -95,7 +134,9 @@ footer {
     padding: 2rem 0;
     border-top: 2px solid var(--primary-color);
     color: var(--text-secondary);
-    text-align: center;
+    text-align: left;
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 1rem;
 }
 
 footer a {
