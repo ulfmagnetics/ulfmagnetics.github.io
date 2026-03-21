@@ -21,6 +21,7 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
     color: var(--text-primary);
     background: var(--background);
     -webkit-font-smoothing: antialiased;
@@ -54,12 +55,17 @@ header h1 {
 }
 
 .header-brand {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .header-magnet img {
     display: block;
     height: 5rem;
+}
+
+.header-magnet {
+    flex-shrink: 0;
 }
 
 .header-magnet:hover {
@@ -73,7 +79,7 @@ header h1 {
 
 header .location {
     font-family: 'News Cycle', sans-serif;
-    font-size: 2.5rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #fc3030;
     margin-top: 0;
@@ -167,8 +173,25 @@ footer a:hover {
 
 /* Responsive */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
+    }
+
+    .header-brand img {
+        height: 1.5rem;
+    }
+
+    .header-magnet img {
+        height: 3rem;
+    }
+
+    .link-card {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.6rem;
     }
 }
