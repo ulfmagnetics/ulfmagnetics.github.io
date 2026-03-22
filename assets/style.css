@@ -61,7 +61,7 @@ header h1 {
 
 .header-magnet img {
     display: block;
-    height: 5rem;
+    height: 3.4rem;
 }
 
 .header-magnet {
@@ -183,7 +183,7 @@ footer a:hover {
     }
 
     .header-magnet img {
-        height: 3rem;
+        height: 2.4rem;
     }
 
     .link-card {
