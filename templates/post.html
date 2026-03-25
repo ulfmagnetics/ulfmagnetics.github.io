@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ULF MAGNETICS</title>
+    <title>{{ post.title }} | ULF MAGNETICS</title>
+    {% if post.summary %}<meta name="description" content="{{ post.summary }}">{% endif %}
     <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Lato&display=swap">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="../../assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-inner">
                 <div class="header-brand">
-                    <img src="assets/ulf-magnetics-logo.svg" alt="ULF MAGNETICS">
+                    <a href="../../"><img src="../../assets/ulf-magnetics-logo.svg" alt="ULF MAGNETICS"></a>
                     <p class="location"><span>PITTSBURGH, PA</span></p>
                 </div>
-                <a href="/" class="header-magnet">
-                    <img src="assets/magnet-front.svg" alt="ULF MAGNETICS">
+                <a href="../../" class="header-magnet">
+                    <img src="../../assets/magnet-front.svg" alt="ULF MAGNETICS">
                 </a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <!-- SCRIBE_START -->
-        <section class="scribe-section">
-            <h2 class="section-label">Electronics</h2>
-            <a class="post-hero" href="posts/midi-thing/">
-                <img class="post-hero-img" src="posts/midi-thing/hero.jpg" alt="MIDI Thing">
-                <div class="post-hero-body">
-                    <h3>MIDI Thing</h3>
-                    <p class="post-date">March 24, 2026</p>
-                    <p>A simple breakout board that adds DIN MIDI and TRS Type A jacks to the Expert Sleepers Disting mk4.</p>
-                    <span class="read-more">Read more →</span>
-                </div>
-            </a>
-        </section>
-        <!-- SCRIBE_END -->
-        <div class="links">
-            <a class="link-card" href="https://ulfmag.net/giraffe/index.html">
-                <h2>Laughin and Stabbin</h2>
-                <p>blogging my journey into DIY synth experimentation</p>
-            </a>
-            <a class="link-card" href="https://ulfmag.net/old-tech-blog/">
-                <h2>Tech Bllurghhh</h2>
-                <p>an old tech blog that I made during my last job search then kinda gave up on</p>
-            </a>
+        <a href="../../" class="back-link">← back</a>
+
+        {% if post.hero %}
+        <div class="post-page-hero">
+            <img class="post-page-hero-img" src="../../{{ post.hero }}" alt="{{ post.title }}">
         </div>
+        {% endif %}
+
+        <h1>{{ post.title }}</h1>
+        <p class="post-meta">{{ post.date.strftime('%B %-d, %Y') }}</p>
+
+        {% if post.repo %}
+        <a class="repo-link" href="{{ post.repo }}" target="_blank" rel="noopener">
+            View on GitHub →
+        </a>
+        {% endif %}
+
+        <div class="post-body">
+            {{ post.content }}
+        </div>
+
+        {% if post.repo %}
+        <a class="repo-link" href="{{ post.repo }}" target="_blank" rel="noopener">
+            View on GitHub →
+        </a>
+        {% endif %}
     </main>
 
     <footer>
@@ -69,6 +72,27 @@
             </div>
         </div>
     </footer>
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+        <img src="" alt="">
+    </div>
+
+    <script>
+        (function() {
+            var lb = document.getElementById('lightbox');
+            var lbImg = lb.querySelector('img');
+            document.querySelectorAll('.post-page-hero-img').forEach(function(img) {
+                img.addEventListener('click', function() {
+                    lbImg.src = img.src;
+                    lbImg.alt = img.alt;
+                    lb.classList.add('open');
+                });
+            });
+            lb.addEventListener('click', function() { lb.classList.remove('open'); });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') lb.classList.remove('open');
+            });
+        })();
+    </script>
     <script>
         (function() {
             var u = 'john', d = 'ulfmag.net';

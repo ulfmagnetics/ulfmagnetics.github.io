@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDI Thing | ULF MAGNETICS</title>
+    <meta name="description" content="A simple breakout board that adds DIN MIDI and TRS Type A jacks to the Expert Sleepers Disting mk4.">
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Lato&display=swap">
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-brand">
+                    <a href="../../"><img src="../../assets/ulf-magnetics-logo.svg" alt="ULF MAGNETICS"></a>
+                    <p class="location"><span>PITTSBURGH, PA</span></p>
+                </div>
+                <a href="../../" class="header-magnet">
+                    <img src="../../assets/magnet-front.svg" alt="ULF MAGNETICS">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="../../" class="back-link">← back</a>
+
+        
+        <div class="post-page-hero">
+            <img class="post-page-hero-img" src="../../posts/midi-thing/hero.jpg" alt="MIDI Thing">
+        </div>
+        
+
+        <h1>MIDI Thing</h1>
+        <p class="post-meta">March 24, 2026</p>
+
+        
+        <a class="repo-link" href="https://github.com/ulfmagnetics/midi-thing" target="_blank" rel="noopener">
+            View on GitHub →
+        </a>
+        
+
+        <div class="post-body">
+            <h2></h2>
+<p>I picked up an <a href="https://www.expert-sleepers.co.uk/disting.html">Expert Sleepers Disting mk4</a> last month. It's a pretty amazing little module with an unbelievable number of functions! As I was looking through the manual I realized that it supports MIDI I/O via an onboard header, but you need to provide your own breakout board (with either MIDI or TRS jacks) to actually make use of it. The breakout is simple but seems to be sold out everywhere I looked online, and I was looking for a first PCB design project, so I decided to make one myself!</p>
+<p>The MIDI Thing is a 4HP, fully passive module (no current draw) that connects to the Disting Mk4's GT2 header via a 4-wire ribbon cable and provides both 5-pin DIN and TRS-A jacks for MIDI I/O. </p>
+<p>If you're interested in making one for yourself, all the build files and instructions can be found in the <a href="https://github.com/ulfmagnetics/midi-thing">Github repo</a>, including:</p>
+<ul>
+<li>KiCAD Project (schematic + PCB)</li>
+<li>Gerber files (ready for upload to JLBPCB, OSH Park, etc)</li>
+<li>Faceplate SVG (ready for import into Lightburn for laser cutting)</li>
+<li>BOM CSV (ready for upload to Mouser)</li>
+<li>Parts list</li>
+<li>Build instructions</li>
+</ul>
+<p>This is a beginner-friendly project. If you have a Disting Mk4 and want to unlock its MIDI I/O capabilities, give it a try! If you run into difficulties open up an issue on the Github repo and I'll see if I can help.</p>
+        </div>
+
+        
+        <a class="repo-link" href="https://github.com/ulfmagnetics/midi-thing" target="_blank" rel="noopener">
+            View on GitHub →
+        </a>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ULF MAGNETICS</p>
+            <div class="footer-links">
+                <a href="#" class="footer-icon-link" id="contact-link">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Email"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span id="contact-text">email</span>
+                </a>
+                <a href="https://github.com/ulfmagnetics" class="footer-icon-link" target="_blank" rel="noopener">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="GitHub"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    ulfmagnetics
+                </a>
+                <a href="https://bsky.app/profile/ulfmagnetics.bsky.social" class="footer-icon-link" target="_blank" rel="noopener">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Bluesky"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+                    @ulfmagnetics.bsky.social
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+        <img src="" alt="">
+    </div>
+
+    <script>
+        (function() {
+            var lb = document.getElementById('lightbox');
+            var lbImg = lb.querySelector('img');
+            document.querySelectorAll('.post-page-hero-img').forEach(function(img) {
+                img.addEventListener('click', function() {
+                    lbImg.src = img.src;
+                    lbImg.alt = img.alt;
+                    lb.classList.add('open');
+                });
+            });
+            lb.addEventListener('click', function() { lb.classList.remove('open'); });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') lb.classList.remove('open');
+            });
+        })();
+    </script>
+    <script>
+        (function() {
+            var u = 'john', d = 'ulfmag.net';
+            var link = document.getElementById('contact-link');
+            link.href = 'mailto:' + u + '@' + d;
+            document.getElementById('contact-text').textContent = u + '@' + d;
+        })();
+    </script>
+</body>
+</html>

@@ -171,6 +171,240 @@ footer a:hover {
     opacity: 0.8;
 }
 
+/* Scribe: posts section on index */
+.scribe-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.scribe-section h2.section-label {
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.post-hero {
+    display: inline-block;
+    width: min-content;
+    min-width: 600px;
+    text-decoration: none;
+    color: var(--text-primary);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background: var(--surface);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.post-hero:hover {
+    background: var(--border);
+    transform: translateY(-2px);
+}
+
+.post-hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.post-hero-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.post-hero-body h3 {
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+}
+
+.post-hero-body .post-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+}
+
+.post-hero-body p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.post-hero-body .read-more {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+}
+
+.post-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.post-card {
+    display: block;
+    width: 50%;
+    padding: 1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.post-card:hover {
+    background: var(--border);
+    transform: translateY(-2px);
+}
+
+.post-card h4 {
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.05em;
+}
+
+.post-card .post-date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.post-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Scribe: individual post pages */
+.post-page-hero {
+    display: block;
+    width: min-content;
+    min-width: 600px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    background: var(--surface);
+}
+
+.post-page-hero-img {
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.post-body {
+    margin-top: 2rem;
+    line-height: 1.75;
+    color: var(--text-primary);
+}
+
+.post-body h2,
+.post-body h3 {
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-body p {
+    margin-bottom: 1rem;
+}
+
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1rem 1.5rem;
+}
+
+.post-body li {
+    margin-bottom: 0.25rem;
+}
+
+.post-body a {
+    color: var(--primary-color);
+}
+
+.post-body img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    margin: 1rem 0;
+}
+
+.repo-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    transition: opacity 0.2s;
+}
+
+.repo-link:hover {
+    opacity: 0.85;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+/* Lightbox */
+.post-page-hero-img {
+    cursor: zoom-in;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+#lightbox.open {
+    display: flex;
+}
+
+#lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: var(--radius);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
