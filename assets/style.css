@@ -428,4 +428,14 @@ footer a:hover {
         flex-direction: column;
         gap: 0.6rem;
     }
+
+    .post-hero {
+        min-width: unset;
+        display: block;
+        width: 100%;
+    }
+
+    .post-hero-img {
+        max-height: 250px;
+    }
 }
