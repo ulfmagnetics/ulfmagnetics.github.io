@@ -408,16 +408,22 @@ footer a:hover {
 /* Responsive */
 
 @media (max-width: 768px) {
+    header {
+        padding: 1rem 0 1.1rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
     header h1 {
         font-size: 1.5rem;
     }
 
     .header-brand img {
-        height: 1.5rem;
+        height: 2.4rem;
     }
 
     .header-magnet img {
-        height: 2.4rem;
+        height: 3.2rem;
     }
 
     .link-card {
@@ -433,9 +439,21 @@ footer a:hover {
         min-width: unset;
         display: block;
         width: 100%;
+        max-width: 100%;
     }
 
     .post-hero-img {
+        max-width: 100%;
         max-height: 250px;
+    }
+
+    .post-page-hero {
+        min-width: unset;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .post-page-hero-img {
+        max-width: 100%;
     }
 }
