@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="allderdice_logo.png">
+    <style>
+        body {
+            margin: 0;
+            background-color: #41e564;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            border: 2px solid #000000;
+            background-color: #afffc6;
+        }
+        /*body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('https://i.pinimg.com/originals/bc/23/b9/bc23b955d467d91ccbcb21ba44dabf17.gif');
+        background-size: cover;
+        background-position: center;
+
+        /* 0.02s equals a 50Hz refresh rate */
+        /* animation: hueCycle 0.5s linear infinite; */
+      
+
+      @keyframes hueCycle {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+      body.hue-paused::before {
+        animation-play-state: paused;
+      } 
+
+    </style>
+</header>
+ <a href="index.html"class="moved-link1">Home</a >
+
+    <a href="about.html"class="moved-link2">About us</a>
+    <a href="contact.html"class="moved-link3">Contact</a>
+    <style>
+  .moved-link1 {
+    border-radius: 10px;
+    display: inline-block; /* Allows the link to accept positioning properties */
+    position: absolute;
+    top: 5%;             /* 20% down from the top of the screen */
+    left: 10%;            /* 15% in from the left edge */
+    
+    /* Optional styling to make it look nicer */
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 9999;
+        font-size: 25px;
+    font-family: sans-serif;
+     -webkit-text-stroke: 1px black; 
+     display: inline-block; 
+  border: 3px solid black; /* Width, Style, Color */
+  padding: 10px;   
+  }
+  .moved-link2 {
+    border-radius: 10px;
+    display: inline-block; /* Allows the link to accept positioning properties */
+    position: absolute;
+    top: 5%;        
+        font-size: 25px;
+    font-family: sans-serif;     /* 20% down from the top of the screen */
+    left: 33.8%;            /* 15% in from the left edge */
+    
+    /* Optional styling to make it look nicer */
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 9999;
+     -webkit-text-stroke: 1px black; 
+     display: inline-block; 
+  border: 3px solid black; /* Width, Style, Color */
+  padding: 10px; 
+  }
+  .moved-link3 {
+    border-radius: 10px;
+    display: inline-block; /* Allows the link to accept positioning properties */
+    position: absolute;
+    top: 5%;        
+        font-size: 25px;
+    font-family: sans-serif;     /* 20% down from the top of the screen */
+    left: 65%;            /* 15% in from the left edge */
+    
+    /* Optional styling to make it look nicer */
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 9999;
+     -webkit-text-stroke: 1px black; 
+     display: inline-block; 
+  border: 3px solid black; /* Width, Style, Color */
+  padding: 10px; 
+  }
+    .moved-link1:hover {
+    color: #df4fff; /* Changes to Red on hover */
+  }
+      .moved-link2:hover {
+    color: #df4fff; /* Changes to Red on hover */
+  } 
+      .moved-link3:hover {
+    color: #df4fff; /* Changes to Red on hover */
+  } 
+  
+</style>
+
+</header>
+<div class="rectangle"></div>
+
+<!-- CSS Styling -->
+<div class="box"></div>
+
+<!-- <style>
+  .box {
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(0, 81, 26);
+    /* Move 150px on X-axis (right) and 50px on Y-axis (down) */
+    transform: translate(0px, -200px);
+  }
+</style> -->
+<style>
+  .arrow1 {
+    width: 4ch;
+    height: 4ch;
+    position: absolute; 
+    top: 20%;
+    right: 13%;
+    font-size: 15px;
+    background-color: #ea8aff
+  }
+  .arrow2 {
+    width: 4ch;
+    height: 4ch;
+    position: absolute; 
+    top: 25%;
+    right: 23%;
+    font-size: 15px;
+    background-color: #ea8aff
+  }
+  .arrow3 {
+    width: 4ch;
+    height: 4ch;
+    position: absolute; 
+    top: 25%;
+    right: 3%;
+    font-size: 15px;
+    background-color: #ea8aff
+  }
+  .arrow4 {
+    width: 4ch;
+    height: 4ch;
+    position: absolute; 
+    top: 30%;
+    right: 13%;
+    font-size: 15px;
+    background-color: #ea8aff
+  }
+
+</style>
+
+</head>
+
+<body>
+  <p style="border:30px; position: absolute; top: 12%; left: 10%"><strong>On computer you can move with WASD!</strong></p>
+
+  <script src="gameScript.js"></script>
+  <button onclick="up()" class="arrow1" ><strong>^</strong></button>
+  <button onclick="left()" class="arrow2"><strong><</strong></button>
+  <button onclick="right()" class="arrow3"><strong>></strong></button>
+  <button onclick="down()" class="arrow4"><strong>v</strong></button>
+  
+    <!-- The game container where graphics are drawn -->
+    <!-- <canvas id="gameCanvas" width="400" height="300"></canvas> -->
+
+    <!-- Connect your JavaScript game logic file -->
+    
+
+
+</body>
+
+</html>

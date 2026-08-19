@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allderdice Linguistics Club</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="allderdice_logo.png">
+    <!-- <script src="index.js"></script> -->
+    <style>
+        body {
+            cursor: url('mouse_cursor.gif'), auto;
+            animation: cursor 1s linear infinite;
+            
+        }
+    </style>
+    
+  </head>
+  
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: rgb(216, 149, 255);
+  padding: 10px;
+  /* width: 90%; */
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  max-width: 700px;
+  
+}
+.container .weekday {
+  background-color: #fdfcfc;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 4vw;
+  text-align: center;
+}
+.container .weekend {
+  background-color: #c6c5c5;
+  border: px solid black;
+  padding: 10px;
+  font-size: 4vw;
+  text-align: center;
+}
+.container .wed {
+  background-color: rgb(145, 207, 153);
+  
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 4vw;
+  text-align: center;
+}
+.container .today {
+  background-color: rgb(222, 145, 255);
+  
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 4vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 350px){
+  .container .weekday,
+  .container .weekend,
+  .container .wed,
+  .container .today{ 
+    padding: 8px 5px;
+    
+  }
+  .container{
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 400px){
+  .container .weekday,
+  .container .weekend,
+  .container .wed,
+  .container .today{
+    font-size: 20px;
+  }
+}
+
+</style>
+<body>
+    <ul>
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+
+
+    <p>Welcome to the Allderdice Linguistics Club website!</p>
+    <p id = "nextMeetingText">Our next meeting is: Cannot Load</p>
+    
+    <p id="monthText" style="font-size: 25px; text-align: center">Month:</p>
+    
+    <div class="container">
+
+  <div class="weekend">Sun</div>
+  <div class="weekday">Mon</div>
+  <div class="weekday">Tue</div>
+  <div class="wed">Wed</div>
+  <div class="weekday">Thu</div>
+  <div class="weekday">Fri</div>
+  <div class="weekend">Sat</div>
+
+  <script src="index.js"></script>
+
+  
+
+
+  <!-- <div class="weekend"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekend">1</div>
+
+  <div class="weekend">2</div>
+  <div class="weekday">3</div>
+  <div class="weekday">4</div>
+  <div class="weekday">5</div>
+  <div class="weekday">6</div>
+  <div class="weekday">7</div>
+  <div class="weekend">8</div>
+
+  <div class="weekend">9</div>
+  <div class="weekday">10</div>
+  <div class="weekday">11</div>
+  <div class="weekday">12</div>
+  <div class="weekday">13</div>
+  <div class="weekday">14</div>
+  <div class="weekend">15</div>
+
+  <div class="weekend">16</div>
+  <div class="weekday">17</div>
+  <div class="weekday">18</div>
+  <div class="weekday">19</div>
+  <div class="weekday">20</div>
+  <div class="weekday">21</div>
+  <div class="weekend">22</div>
+
+  <div class="weekend">23</div>
+  <div class="weekday">24</div>
+  <div class="weekday">25</div>
+  <div class="wed">26</div>
+  <div class="weekday">27</div>
+  <div class="weekday">28</div>
+  <div class="weekend">29</div>
+
+  <div class="weekend">30</div>
+  <div class="weekday">31</div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekday"></div>
+  <div class="weekend"></div> -->
+  
+
+</div>
+    
+
+<p><strong>Quiz of the week: </strong><a href="https://www.geoguessr.com/vgp/3204?gamemode=pinhard">How many African capitals can you get correct?</a></p>
+<p>DM our Instagram with your highscore, we post the highest with the quickest time at the end of each week!</p>
+</body>
+</html>
