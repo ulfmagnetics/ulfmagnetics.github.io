@@ -8,6 +8,15 @@ body{
 	color: #5C6AC4;
 }
 
+.notification{
+  background-color: rgb(137, 189, 132);
+  padding: 5px;
+  margin: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto auto;

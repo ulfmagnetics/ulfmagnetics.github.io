@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="allderdice_logo.png">
+    <style>
+        body {
+            cursor: url('mouse_cursor.gif'), auto;
+            animation: cursor 1s linear infinite;
+            p {
+                /* text-align: center; */
+            }
+        }
+        p {
+        /* Decreases the space between lines; default is usually around 1.5 */
+        line-height: 1.2; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="game.html">Game</a></li>
+    </ul>
+    <p>Welcome to our archive of presentations for Linguistics Club that we've turned into articles!</p>
+    <p>If you missed a meeting or just see something that interests you, you are welcome to read any of them :)</p>
+
+
+    <style>
+        .dropdown {
+            width: 95%;
+            height: 35px;
+            position: relative;
+            left: 2.5%;
+            flex-shrink: 0;
+            background-color: #ea8aff;
+            border-radius: 10px;
+            display: flex; 
+            align-items: center; 
+            gap: 10px;
+        }
+        .dropdown:hover{
+            cursor: grab;
+        }
+        .articlebody {
+            width: 95%;
+            height: 0px;
+            position: relative;
+            left: 2.5%;
+            flex-shrink: 0;
+            border: 10px solid #ea8aff;
+            border-top: 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box; 
+            background-color: rgb(255, 255, 255);
+            display: flex; 
+            /* align-items: center;  */
+            /* gap: 10px; */
+            display: none;
+        }
+        /* .arrow {
+            background-color:rgb(38, 205, 69);
+            border: 0px;
+            font-size: 25px;
+        }
+        .arrow:hover{
+            cursor: grab;
+        } */
+    </style>
+
+    <div id="heading1" class="dropdown" >
+        <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-grow: 1;">
+            <p><strong>Introduction to Linguistics</strong> (8/31/26)</p>
+        </span>
+        <!-- <button class="arrow"><strong>v</strong></button> -->
+         <p id="dropdownarrow1" style="font-size:18px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>V</strong></p>
+    </div>
+    
+
+
+    <div id="body1" class="articlebody" style="padding-left: 15px; flex-direction: column;">
+        <h2>Welcome to Linguistics Club!</h2>
+        <h3>What is Linguistics?</h3>
+        <p>Linguistics is the study of languages, what they contain, and how they are used.
+            Linguistics can relate to everything from foreign language learning to cryptography!
+            We can learn about language evolution, history, geography, culture, and much more :D
+        </p>
+        <h3>Branches of Linguistics</h3>
+        <p>There are two main categories of linguistics, though it is important to note that they are very interconnected and often overlap.</p>
+        <h3>1. Microlinguistics</h3>
+        <p>The study of the structure of language. Focuses on the technical aspects of it, rather than the context. These are the core areas of linguistics and are used in the branches of macrolinguistics.</p>
+        <p>-> Phonetics and phonology</p>
+        <p>-> Morphology</p>
+        <p>-> Syntax</p>
+        <p>-> Lexicology and semantics</p>
+        <img
+        img src="articleimages/intro/microlinguistics_circle.svg"
+        width="300" height="300"
+        alt="Microlinguistics Branches Diagram">
+        <h3>2. Macrolinguistics</h3>
+        <p>The study of language in its context, such as the culture and behaviors of people. It often overlaps with other sciences rather than focusing on simply the language itself.</p>
+        <h4>Language Variation</h4>
+        <p>1. Sociolinguistics</p>
+        <p style="padding-left:40px;">a. Dialectology</p>
+        <p style="padding-left:40px;">b. Ethnolinguistics</p>
+        <p>2. Discourse Analysis, Stylistics, and Text Linguistics</p>
+        <h4>Other Branches</h4>
+        <p>1. Contrastive Linguistics</p>
+        <p>2. Psycholinguistics</p>
+        <p>3. Neurolinguistics</p>
+        <p>4. Computational Linguistics</p>
+        <p>5. Applied Linguistics</p>
+        <p>6. Synchronic Linguistics</p>
+        <p>7. Historical Linguistics</p>
+        <p>8. Comparative Linguistics</p>
+        <h3>What Does Linguistics Club Do?</h3>
+        <p>-> Learn basic greetings and questions and stuff for a variety of languages</p>
+        <p>-> Practice alphabet memorization / word association techniques</p>
+        <p>-> Evolution of languages & etymology</p>
+        <p>-> Compare sentence structures (and similar things) across languages</p>
+        <p>-> Vexillology & geography</p>
+        <p>-> Mythology</p>
+        <p>-> Virtual field trips</p>
+        <p>-> Cryptography</p>
+        <p>-> Shakespearean/old English</p>
+        <h3>NACLO!</h3>
+        <img
+        img src="naclo_logo.png"
+        width="450" height="300"
+        alt="NACLO logo">
+        <h2>Thank you for reading!</h2>
+    </div>
+
+
+
+
+
+    <script>
+        let showing = [false];
+
+        function showArticle(num) {
+            let heading = document.getElementById("heading"+num);
+            let arrow = document.getElementById("dropdownarrow"+num);
+            let body = document.getElementById("body"+num);
+
+            if (showing[num-1]) {
+                showing[num-1] = false;
+                //
+                heading.style.borderBottomLeftRadius = "10px"
+                heading.style.borderBottomRightRadius = "10px";
+                arrow.style.transform = `rotate(${0}deg)`
+                body.style.display = "none"
+                body.style.height = "0px"
+            }
+            else {
+                showing[num-1] = true
+                //
+                heading.style.borderBottomLeftRadius = "0px"
+                heading.style.borderBottomRightRadius = "0px";
+                arrow.style.transform = `rotate(${180}deg)`
+                body.style.display = "flex"
+                body.style.height = "auto"
+            }
+        }
+
+        let div = document.getElementById("heading1");
+        // div.textContent = showing[0];
+        div.addEventListener("click", () => {
+            showArticle(1)
+        });
+        //
+
+    </script>
+
+</body>
+
+</html>
