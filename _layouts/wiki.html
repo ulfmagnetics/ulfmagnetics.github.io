@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | UlfMagneticsWiki</title>
+    <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Lato&display=swap">
+    <link rel="stylesheet" href="/assets/style.css">
+    <style>
+        .post-body h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+        .post-body ul ul { margin-bottom: 0.25rem; }
+        .post-body img[src$="79-lorimer-logo.jpg"] { float: right; margin: 0 0 1rem 1.5rem; }
+        .wiki-archived {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        .wiki-archived a { color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-brand">
+                    <a href="/"><img src="/assets/ulf-magnetics-logo.svg" alt="ULF MAGNETICS"></a>
+                    <p class="location"><span>PITTSBURGH, PA</span></p>
+                </div>
+                <a href="/" class="header-magnet">
+                    <img src="/assets/magnet-front.svg" alt="ULF MAGNETICS">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        {% if page.url == "/wiki/" %}
+        <a href="/" class="back-link">← back</a>
+        <h1>UlfMagneticsWiki</h1>
+        {% else %}
+        <a href="/wiki/" class="back-link">← UlfMagneticsWiki</a>
+        <h1>{{ page.title }}</h1>
+        {% endif %}
+
+        <div class="post-body">
+            {{ content }}
+        </div>
+
+        {% if page.archived_from %}
+        <p class="wiki-archived">
+            Restored from the original UlfMagneticsWiki (wiki.ulfmagnet.com, 2007–2010) via the
+            <a href="{{ page.archived_from }}">Wayback Machine</a>, {{ page.archived_revision }}.
+        </p>
+        {% endif %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ULF MAGNETICS</p>
+        </div>
+    </footer>
+</body>
+</html>
