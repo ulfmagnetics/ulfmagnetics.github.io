@@ -23,7 +23,7 @@ A swing originally hung from the truss on the roof, and a platform was built on 
 
 Each winter there has been a winterization attempt at 79 Lorimer, and each year this has failed. Generally speaking, when you come in from the winter cold wearing your winter clothes, do not take them off until you go to bed. The first winter we used the industrial space heaters to some success, until we got the 3-month, \$6000 bill. Ever since, space heaters have dominated the wintertime, causing the loft to resemble a college dorm in the winter, with everyone camping out in their own rooms.
 
-In the summertime, there is perhaps no better \[…\] in all of New York City.
+In the summertime, there is perhaps no better roof in all of New York City.
 
 TODO: finish writing this John 15:04, 21 April 2007 (PDT)
 
