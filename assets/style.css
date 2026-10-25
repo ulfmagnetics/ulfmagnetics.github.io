@@ -37,8 +37,8 @@ body {
 /* Header */
 header {
     background: var(--background);
-    padding: 2rem 0;
-    margin-bottom: 2rem;
+    padding: 1.5rem 0 1rem;
+    margin-bottom: 1rem;
 }
 
 header h1 {
@@ -50,8 +50,10 @@ header h1 {
 
 .header-inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 0.75rem 1.5rem;
 }
 
 .header-brand {
@@ -59,16 +61,21 @@ header h1 {
     flex-direction: column;
 }
 
-.header-magnet img {
-    display: block;
-    height: 3.4rem;
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
 }
 
-.header-magnet {
-    flex-shrink: 0;
+.header-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-.header-magnet:hover {
+.header-nav a:hover {
     opacity: 0.8;
 }
 
@@ -78,15 +85,13 @@ header h1 {
 }
 
 header .location {
-    font-family: 'News Cycle', sans-serif;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #fc3030;
-    margin-top: 0;
-    line-height: 1;
-    letter-spacing: normal;
-    display: flex;
-    justify-content: space-between;
+    font-family: 'fixedsys', 'Courier New', 'Courier', monospace;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin-top: 0.45rem;
 }
 
 header .tagline {
@@ -173,8 +178,8 @@ footer a:hover {
 
 /* Scribe: posts section on index */
 .scribe-section {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 0;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--border);
 }
 
@@ -420,10 +425,6 @@ footer a:hover {
 
     .header-brand img {
         height: 2.4rem;
-    }
-
-    .header-magnet img {
-        height: 3.2rem;
     }
 
     .link-card {

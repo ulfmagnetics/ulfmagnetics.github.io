@@ -79,7 +79,7 @@ def build_scribe_section(posts: list) -> str:
     hero = featured[0] if featured else posts[0]
     cards = [p for p in posts if p is not hero]
 
-    lines = ['        <section class="scribe-section">']
+    lines = ['        <section class="scribe-section" id="electronics">']
     lines.append('            <h2 class="section-label">Electronics</h2>')
 
     # Hero block
